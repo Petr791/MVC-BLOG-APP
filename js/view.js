@@ -76,8 +76,8 @@ class View {
 
 	// очистка полей
 	_clearView() {
-		this.titleInputNode.value = '';
-		this.descInputNode.value = '';
+		/* this.titleInputNode.value = ''; */
+		/* this.descInputNode.value = ''; */
 		this.postsNode.innerHTML = '';
 		this.errorNode.innerText = '';
 	}
