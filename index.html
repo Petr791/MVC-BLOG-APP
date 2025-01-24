@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MVC Blog App</title>
+	<!--  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+	<div class="blog">
+		<div class="container">
+
+			<h1 class="blog__title">Приложение БЛОГ</h1>
+			<div class="row">
+				<div class="col">
+					<h2 class="col__title">Новый пост</h2>
+					<input id="post-title-input" class="post-title-input" type="text" placeholder="Заголовок">
+					<textarea id="post-text-input" class="post-text-input" type="text" placeholder="Текст"></textarea>
+					<button id="add-post-btn" class="new-post-btn">Опубликовать</button>
+
+					<div class="validation-message-wrapper">
+						<div id="validation-messag" class="validation-message validation-message__hidden">
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="col">
+					<h2 class="col__title">Лента</h2>
+					<div id="posts" class="posts">
+						Тут пока пусто...
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./js/model.js"></script>
+	<script src="./js/view.js"></script>
+	<script src="./js/conroller.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
